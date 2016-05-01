@@ -1,0 +1,17 @@
+<div ng-controller='StatsController'>
+  <h1>Statistics</h1>
+  <div class='table-responsive'>
+  <table class="table table-bordered table-striped" ng-repeat=''>
+    <tr>
+      <th><div class='glyphicon glyphicon-triangle-bottom'></div>Champion</th>
+      <th><div class='glyphicon glyphicon-triangle-bottom'></div>Win Rate</th>
+      <th><div class='glyphicon glyphicon-triangle-bottom'></div>Pick Rate</th>
+    </tr>
+    <tr>
+      <td><img ng-src='{{champion}}.png'>{{champion}}</td>
+      <td>{{winrate}}</td>
+      <td>{{pickrate}}</td>
+    </tr>
+  </table>
+</div>
+</div>

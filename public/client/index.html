@@ -1,0 +1,33 @@
+<html ng-app='WardsApp'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.icon">
+        <title>Buy Wards</title>
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+        <script src='https://code.jquery.com/jquery-2.2.0.min.js' type='text/javascript'></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' type='text/javascript'></script>
+
+        <link href="styles/style.css" rel='stylesheet'>
+
+        <script src='app.js'></script>
+        <script src='config.js'></script>   
+    </head>
+    <body ng-controller='WardsAppController' class='contrainer'>
+        <div ng-include='"views/navigation/header.view.html"'></div>
+        <div ng-view class="container-fluid col-md-8 col-md-offset-2 text-center main">
+            {{$location.url()}}
+        </div>
+        <div ng-include='"views/navigation/footer.view.html"'></div>
+    </body>
+</html>

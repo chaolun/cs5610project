@@ -1,0 +1,20 @@
+<div ng-controller='GamesController'>
+  <h1>INJECT SUMMONER NAME {{SummonerName}}</h1>
+  <div class='table-responsive'>
+  <table class="table table-bordered table-striped" ng-repeat=''>
+    <tr>
+      <th><div class='glyphicon glyphicon-triangle-bottom'></div>Champion</th>
+      <th><div class='glyphicon glyphicon-triangle-bottom'></div>Game Statistics</th>
+    </tr>
+    <tr>
+      <td><img ng-src='{{champion}}'>THIS IS THE CHAMPION IMAGE</td>
+      <td>
+        <div class='gameStats'>
+          <div class='build'>FINAL ITEM BUILD GOES HERE</div>
+          <div class="score">KDA CS AND STUFF GO HERE</div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>

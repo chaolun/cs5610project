@@ -1,0 +1,12 @@
+.main {
+  padding-top: 50px;
+  margin-top:40px;
+}
+
+.active {
+  background-color: #2d80d2;
+}
+
+.navbar-right{
+  padding-right: 30px;
+}
